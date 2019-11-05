@@ -6,10 +6,8 @@ const PORT = 3000;
 app.set("json spaces", 4);
 
 consign()
-    .include("routes")
-    .then("views")
+    .include("models")
+    .then("libs/middlewares.js")
+    .then("routes")
+    .then("libs/boot.js")
     .into(app);
-
-app.listen(PORT, () => {
-    console.log(`Task api - porta ${PORT}`);
-});
