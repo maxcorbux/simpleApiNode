@@ -1,6 +1,6 @@
 module.exports = {
-    uri: ""
-    database: "ntask",
-    username: "root",
+    uri: "",
+    database: "test",
+    username: "testeiro",
     password: "123teste123",
 }

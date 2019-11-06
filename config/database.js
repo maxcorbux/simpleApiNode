@@ -16,5 +16,5 @@ module.exports = function(uri) {
             console.log("Mongoose! Desconectado pelo término da aplicação ");
         });
         process.exit(0);
-    })
+    });
 }
