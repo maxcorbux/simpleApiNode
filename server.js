@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 const consign = require("consign");
-const PORT = 3000;
-cont mongo = require("mongodb");
+let login = "testeiro";
+let senha = "123teste123";
+require("./config/database.js")(`mongodb+srv://${login}:${senha}@teste-j0o3k.mongodb.net/test?retryWrites=true&w=majority`);
 
 app.set("json spaces", 4);
 
